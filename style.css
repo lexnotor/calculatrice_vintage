@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(219, 186, 166);
+    font-family: Consolas;
+}
+
+section {
+    width: 350px;
+    height: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 110px 340px;
+    row-gap: 40px;
+    background-color: rgb(39, 43, 55);
+    border-radius: 4px;
+    box-shadow: 2px 3px 8px black;
+}
+
+article#afficheur {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    padding: 5px;
+    background-color: rgb(120, 158, 90);
+    border-radius: 4px;
+    font-size: 120%;
+}
+#afficheur #input {
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+#afficheur #output {
+    text-align: end;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+article#clavier {
+    display: grid;
+    padding: 0px;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(6, 40px);
+    justify-content:space-between;
+    align-content: space-between;
+}
+
+#clavier .touche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-size: 20px;
+    background-color: rgb(20, 22, 28);
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#clavier .touche:hover {
+    border-width: 2px;
+}
+
+
+.clig {
+    animation: 1s infinite linear clig;
+}
+@keyframes clig {
+    0% {
+        color: black;
+    }
+    50% {
+        color: transparent;
+    }
+    100% {
+        color: black;
+    }
+}

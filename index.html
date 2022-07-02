@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <article id="afficheur">
+            <div id="input"><span class="clig">|</span></div>
+            <div id="output">0</div>
+        </article>
+        <article id="clavier">
+            <div class="touche effacer" id="effacer" onclick="effacer()">DEL</div>
+            <div class="touche reculer" id="gauche" onclick="appliquer('l')">&lt;</div>
+            <div class="touche avancer" id="droite" onclick="appliquer('r')">&gt;</div>
+            <div class="touche cleanall" id="recommencer" onclick="effacer('all')">AC</div>
+            <div class="touche ouvr" id="ouvrante" onclick="insert_number('(')">(</div>
+            <div class="touche ferm" id="fermante" onclick="insert_number(')')">)</div>
+            <div class="touche sinus" id="sinus">sin()</div>
+            <div class="touche operateur" id="modulo" onclick="insert_operateur('%')">%</div>
+            <div class="touche operante" id="sept" onclick="insert_number(7)">7</div>
+            <div class="touche operante" id="huit" onclick="insert_number(8)">8</div>
+            <div class="touche operante" id="neuf" onclick="insert_number(9)">9</div>
+            <div class="touche operateur" id="diviser" onclick="insert_operateur('/')">/</div>
+            <div class="touche operante" id="quatre" onclick="insert_number(4)">4</div>
+            <div class="touche operante" id="cinq" onclick="insert_number(5)">5</div>
+            <div class="touche operante" id="six" onclick="insert_number(6)">6</div>
+            <div class="touche operateur" id="moins" onclick="insert_operateur('-')">-</div>
+            <div class="touche operante" id="un" onclick="insert_number(1)">1</div>
+            <div class="touche operante" id="deux" onclick="insert_number(2)">2</div>
+            <div class="touche operante" id="trois" onclick="insert_number(3)">3</div>
+            <div class="touche operateur" id="plus" onclick="insert_operateur('+')">+</div>
+            <div class="touche dot" id="point" onclick="insert_number('.')">.</div>
+            <div class="touche operante" id="zero" onclick="insert_number(0)">0</div>
+            <div class="touche egal" id="egal" onclick="calculer()">=</div>
+            <div class="touche operateur" id="fois" onclick="insert_operateur('*')">x</div>
+        </article>
+    </section>
+    <script src="srcipt.js"></script>
+</body>
+</html>
